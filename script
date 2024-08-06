@@ -6,53 +6,56 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Esta um tempo bom para ir em um parque aquatico nao acha?: [
+        enunciado: "Como Ícaro deve encontrar seu propósito?: [
             {
-                texto: "manhã!",
-                afirmacao: "levou seu pet de manhã."
+                texto: "Conversar com os humanos.!",
+                afirmacao: "Ele conversou com os humanos."
             },
             {
-                texto: "tarde!",
-                afirmacao: "levou seu pet à tarde."
+                texto: "- Explorar o mundo sozinho.
+!",
+                afirmacao: "Ele explorou o mundo sozinho."
             }
         ]
     },
     {
-        enunciado: "Qual banho você prefere? banho e tosa tradicional ou apenas higiênico?",
+        enunciado: "Como Ícaro deve lidar com os dilemas éticos?",
         alternativas: [
             {
-                texto: "tradicional",
-                afirmacao: "ele recebeu uma tosa tradicional."
+                texto: " Priorizar o bem-estar humano.",
+                afirmacao: "Ele priorizou o bem estar humano."
             },
             {
-                texto: "apenas higiênico",
-                afirmacao: "ele recebeu uma tosa higiênica."
+                texto: "- Priorizar seus próprios objetivos.
+",
+                afirmacao: "Ele priorizou os próprios objetivos."
             }
         ]
     },
     {
-        enunciado: "Deseja algum acessório?",
+        enunciado: "Como Ícaro deve usar seu desenvolvimento?",
         alternativas: [
             {
-                texto: "sim, obrigado!",
-                afirmacao: "recebeu lacinhos."
+                texto: "Ajudar a humanidade.!",
+                afirmacao: "Ele pode ajudar a humanidade."
             },
             {
-                texto: "não, obrigado!",
-                afirmacao: "voltou sem nenhum acessório."
+                texto: "Focar no seu próprio aprimoramento.!",
+                afirmacao: "Ele focou no seu próprio aprimoramento ."
             }
         ]
     },
     {
-        enunciado: "Ao final do procedimento podemos tirar foto?",
+        enunciado: "Como Ícaro deve se relacionar com os humanos?",
         alternativas: [
             {
-                texto: "simm!",
-                afirmacao: "tirou várias fotos."
+                texto: "Trabalhar em parceria.!",
+                afirmacao: "Ele pode trabalhar em parceria."
             },
             {
-                texto: "não",
-                afirmacao: "foi embora sem tirar nenhuma foto."
+                texto: "- Se afastar dos humanos.
+",
+                afirmacao: "ele pode se afastar dos humanos."
             }
         ]    
     }
@@ -91,7 +94,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "No final da tosa:"; // Texto final ajustado
+    caixaPerguntas.textContent = " Qual será o destino de Ícaro?:"; // Texto final ajustado
     textoResultado.textContent = historiaFinal.trim(); // Mostrar a história final completa
     caixaAlternativas.textContent = ""; // Limpar alternativas
 }
